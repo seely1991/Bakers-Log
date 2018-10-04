@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="./style.css" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" href="./bread.png">
+		<title>Bakers List</title>
+	</head>
+	<body onload=load()>
+		<a id="bg"><img src="https://stmed.net/sites/default/files/baking-wallpapers-28205-3565070.jpg" height="" width="100%"/></a>
+		<form>
+			<div id="load">
+				<div id="inputsBox" class="box">
+					<input id="qty" class="input" type="number" placeholder="amnt">
+					<input id="other" class="input" type="text" placeholder="other" style="display: none;"><button type="button" id="hideOther" class="xBton" style="display: none"><div class="buttonText">&times;</div></button>
+					<select id="input" class="dropdown" onchange=showOther()>
+						<option value="other">other</option>
+						<option value="cup" selected>cups</option>
+						<option value="floz">floz</option>
+						<option value="tsp">tsp</option>
+						<option value="tbsp">tbsp</option>
+					</select>
+					<input id="item" class="input" placeholder="ingredient" type="text">
+					<div id="converted">
+						<p>converted to</p>
+					</div>
+					<select id="output" class="dropdown">
+						<option value="NA" selected>none</option>
+						<option value="cup">cups</option>
+						<option value="floz">floz</option>
+						<option value="tsp">tsp</option>
+						<option value="tbsp">tbsp</option>
+						<option value="g">grams</option>
+						<option value="oz">oz</option>
+					</select>
+				</div>
+				<button type="button" id="add">add</button>
+			</div>
+		</form>
+		<div id="list">
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="./script.js" type="text/javascript"></script>
+	</body>
+</html>

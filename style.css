@@ -1,0 +1,164 @@
+* {
+	font-family: 'courier new';
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
+#load {
+	display: none;
+}
+
+#bg {
+	display: inline;
+	position: sticky;
+	width: 100px;
+	height: 100px;
+	z-index: -5;
+	opacity: .4;
+}
+
+.box {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#inputsBox {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 790px;
+	transform: translate(-385px, -110px);
+}
+
+#converted {
+	display: inline-block;
+	width: 80px;
+	margin:0px;
+
+}
+
+#other {
+	position: relative;
+	width: 111px;
+	padding-left: 9px;
+	margin-right: 2px;
+	height: 46px;
+	font-size: 30px;
+	border-radius: 5px;
+	border: none;
+}
+
+.input {
+	height: 70px;
+	font-size: 40px;
+}
+
+p {
+	text-align: right;
+}
+
+#item {
+	width: 300px;
+}
+
+#qty {
+	width: 110px;
+}
+
+.dropdown {
+	height: 50px;
+	font-size: 30px;
+}
+
+#add {
+	display: inline-block;
+	position: absolute;
+	height: 70px;
+	width: 100px;
+	font-size: 40px;
+	left: 50%;
+	transform: translate(-50px, 0px);
+	top: 50%;
+}
+
+#list {
+	display: inline-block;
+	background-color: white;
+	position: absolute;
+	width: 700px;
+	left: 50%;
+	top: 50%;
+	font-size: 35px;
+	z-index: 8;
+	transform: translate(-350px,100px);
+	box-shadow: inset 0px 0px 3px 0px gray;
+}
+
+.listItem {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: inline-block;
+	min-width: 200px;
+}
+
+.listText {
+	display: inline-block;
+	width: 670px;
+	text-align: left;
+}
+
+.xBton {
+	position: relative;
+	padding: 0;
+	padding-left: 1px;
+	padding-bottom: 10px;
+	font-family: arial;
+	color: white;
+	height: 15px;
+	width: 15px;
+	font-size: 16px;
+	border-radius: 100%;
+	border: 0;
+	background-color: #D5D5D5;
+	bottom: 7px;
+	border: 1px solid silver;
+	top: -2px;
+	user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+input[type="button"] {
+	user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.xBton:hover {
+	background-color: #B9B9B9;
+}
+
+.buttonText {
+	position: relative;
+	top: -2px;
+	user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+#hideOther {
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	transform: translate(-168px,23px);
+}
